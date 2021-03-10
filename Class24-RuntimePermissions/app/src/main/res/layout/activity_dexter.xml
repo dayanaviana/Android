@@ -1,0 +1,55 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/btn_single_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Single Permission"/>
+
+    <Button
+        android:id="@+id/btn_multiple_permissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn_single_permission"
+        android:layout_centerHorizontal="true"
+        android:text="Multiple Permissions"/>
+
+    <TextView
+        android:id="@+id/txt_granted_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn_multiple_permissions"
+        android:text="Permissions Granted:"
+        android:textStyle="bold"
+        android:textSize="24dp"/>
+    <TextView
+        android:id="@+id/txt_granted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_granted_view"
+        android:text="..."
+        android:textSize="16dp"/>
+    <TextView
+        android:id="@+id/txt_denied_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_granted"
+        android:text="Permissions Denied:"
+        android:textStyle="bold"
+        android:textSize="24dp"/>
+    <TextView
+        android:id="@+id/txt_denied"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_denied_view"
+        android:text="..."
+        android:textSize="16dp"/>
+
+</RelativeLayout>
