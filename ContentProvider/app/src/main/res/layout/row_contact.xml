@@ -1,0 +1,25 @@
+<layout>
+    <data>
+        <variable
+            name="contact"
+            type="com.android_training.contentprovider.contacts.Contact" />
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_name"
+        android:textSize="20dp"
+        android:text="@{contact.name}"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_number"
+        android:textSize="20dp"
+        android:text="@{contact.phoneNumber}"/>
+
+</LinearLayout>
+</layout>
